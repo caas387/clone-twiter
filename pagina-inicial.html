@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="assets/styles/global.css" />
+</head>
+
+<body>
+
+    <body>
+        <div class="container">
+            <aside class="sidebar">
+                <h2>
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="#1DA1F2" xmlns="http://www.w3.org/2000/svg"
+                        aria-label="Logo Twitter">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14.86 5.48 5.48 0 002.4-3.04 10.92 10.92 0 01-3.48 1.33 5.44 5.44 0 00-9.3 4.96A15.42 15.42 0 012 4.15a5.44 5.44 0 001.68 7.25 5.41 5.41 0 01-2.46-.68v.07a5.44 5.44 0 004.36 5.33 5.46 5.46 0 01-2.45.09 5.45 5.45 0 005.08 3.78A10.9 10.9 0 012 19.54 15.39 15.39 0 008.29 21c9.05 0 14-7.5 14-14 0-.21 0-.42-.02-.63A9.9 9.9 0 0023 3z" />
+                    </svg>
+                </h2>
+                <nav>
+                    <a href="#">Página Inicial</a>
+                    <a href="explorar.html">Explorar</a>
+                    <a href="#">Notificações</a>
+                    <a href="#">Mensagens</a>
+                </nav>
+                <button id="toggleTheme">Alternar Tema</button>
+            </aside>
+
+            <main class="feed">
+                <div class="tweet-box">
+                    <textarea id="tweetInput" placeholder="O que está acontecendo?" maxlength="150"></textarea>
+                    <p id="charCount" class="char-count">150 caracteres restantes</p>
+                    <button id="tweetButton">Tweetar</button>
+                    <p id="errorMessage" class="error-message" style="display:none;">Por favor, escreva algo antes de
+                        tweetar.</p>
+                </div>
+
+                <div id="tweetsContainer" class="tweets">
+                    <!-- Tweets adicionados aqui -->
+                </div>
+            </main>
+
+            <aside class="widgets">
+                <h3>Tendências</h3>
+                <ul>
+                    <li>#HTML</li>
+                    <li>#CSS</li>
+                    <li>#CloneTwitter</li>
+                </ul>
+            </aside>
+        </div>
+
+        <script src="assets/script/main.js"></script>
+    </body>
+
+</html>
