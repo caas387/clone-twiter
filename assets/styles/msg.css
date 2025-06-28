@@ -1,0 +1,56 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #000;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    background: #e6ecf0;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1da1f2;
+    font-weight: bold;
+}
+
+nav button {
+    margin-left: auto;
+    padding: 8px 15px;
+    background: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.msg {
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.msg.sent {
+    align-self: flex-end;
+    background: #1da1f2;
+    color: white;
+}
+
+.msg.received {
+    align-self: flex-start;
+    background: #e6ecf0;
+}
